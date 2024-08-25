@@ -14,7 +14,7 @@ const UserForm = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post('http://localhost:5000/api/userdata', { data });
+            const res = await axios.post('https://rest-api-f3m5.onrender.com/api/userdata', { data });
             setResponse(res.data);
             setError(null);
         } catch (err) {
